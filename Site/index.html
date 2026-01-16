@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<!-- ================= SEO BÁSICO ================= -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Olieplan | Consultoria Financeira, FP&A e Planejamento Estratégico</title>
+
+<meta name="description" content="Consultoria financeira e estratégica para PMEs. Planejamento financeiro, FP&A, controladoria, dados e mentoria executiva para decisões seguras e crescimento sustentável.">
+
+<meta name="keywords" content="consultoria financeira, planejamento financeiro, FP&A, controladoria, consultoria estratégica, dados financeiros, mentoria executiva, PME">
+
+<meta name="author" content="Olieplan Consultoria">
+
+<!-- ================= FONTS ================= -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                url("images/hero-bg.jpg") center/cover no-repeat; /* EDITÁVEL */
+}
+
+.overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #d4af37;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 1.6rem;
+    margin: 10px 0 20px;
+}
+
+.hero p {
+    max-width: 760px;
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* ================= BOTÕES ================= */
+.btn-gold {
+    background: #d4af37;
+    color: #000;
+    padding: 15px 42px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+/* ================= SERVIÇOS ================= */
+.services {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.services p.sub {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #ccc;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background: #111;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    color: #d4af37;
+    margin: 18px 0 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-card p {
+    padding: 0 18px 25px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ================= SOBRE ================= */
+.about {
+    padding: 90px 10%;
+    background: #0b0b0b;
+    text-align: center;
+}
+
+.about h2 {
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+/* ================= CTA ================= */
+.cta {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #ccc;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 38px;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/* ================= CONTATO ================= */
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0b0b0b;
+}
+
+.contact h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #ccc;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #222;
+    color: #777;
+}
+
+/* ================= WHATSAPP FIXO ================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 999;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+    <div class="overlay">
+        <img src="images/logo.png" class="logo" alt="Olieplan Logo"> <!-- EDITÁVEL -->
+        <h1>OLIEPLAN</h1>
+        <h2>Consultoria Financeira & Estratégica</h2>
+        <p>
+            Ajudamos pequenas e médias empresas a estruturar suas finanças,
+            tomar decisões estratégicas e crescer com previsibilidade,
+            controle e visão de longo prazo.
+        </p>
+
+        <!-- CTA WHATSAPP -->
+        <a href="https://wa.me/SEU_NUMERO_AQUI?text=Quero%20uma%20conversa%20estratégica%20sobre%20minha%20empresa"
+           class="btn-gold" target="_blank">
+           Conversar no WhatsApp
+        </a>
+    </div>
+</header>
+
+<!-- ================= SERVIÇOS ================= -->
+<section id="servicos" class="services">
+    <h2>Soluções para Empresas em Crescimento</h2>
+    <p class="sub">
+        Atuamos lado a lado com gestores e empreendedores que precisam
+        transformar números em decisões e estratégia em resultado.
+    </p>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <img src="images/planejamento.jpg">
+            <h3>Planejamento Financeiro</h3>
+            <p>Previsibilidade de caixa, orçamento estruturado e visão clara do futuro financeiro.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/estrategico.jpg">
+            <h3>Planejamento Estratégico</h3>
+            <p>Metas, direcionamento e planos conectados à realidade financeira do negócio.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/fpa.jpg">
+            <h3>FP&A</h3>
+            <p>Análises, cenários e suporte direto para decisões mais seguras.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/controladoria.jpg">
+            <h3>Controladoria</h3>
+            <p>Indicadores, governança e controle para crescimento sustentável.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/dados.jpg">
+            <h3>Consultoria de Dados</h3>
+            <p>Dados organizados e transformados em inteligência estratégica.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/mentoria.jpg">
+            <h3>Mentoria Executiva</h3>
+            <p>Acompanhamento estratégico para líderes que precisam decidir melhor.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="about">
+    <h2>Sobre a Olieplan</h2>
+    <p>
+        A Olieplan nasce com o propósito de apoiar empresas em crescimento
+        que precisam de clareza financeira, estrutura e visão estratégica.
+    </p>
+    <p>
+        Atuamos como parceiros da gestão, conectando finanças, estratégia e dados
+        para que decisões sejam tomadas com segurança, método e visão de longo prazo.
+    </p>
+    <p>
+        Nossa atuação é prática, personalizada e orientada a resultado.
+    </p>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta">
+    <h2>Vamos estruturar o crescimento da sua empresa?</h2>
+    <p>
+        Se você sente que sua empresa cresceu, mas a gestão financeira não acompanhou,
+        está na hora de conversar com a Olieplan.
+    </p>
+
+    <a href="https://wa.me/SEU_NUMERO_AQUI?text=Quero%20entender%20como%20a%20Olieplan%20pode%20ajudar"
+       class="btn-outline" target="_blank">
+       Falar com Especialista
+    </a>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>Email: contato@olieplan.com <!-- EDITÁVEL --></p>
+    <p>LinkedIn: linkedin.com/in/olieplan <!-- EDITÁVEL --></p>
+</section>
+
+<footer>
+    <p>© 2026 Olieplan Consultoria. Todos os direitos reservados.</p>
+</footer>
+
+<!-- ================= BOTÃO WHATSAPP FIXO ================= -->
+<a href="https://wa.me/SEU_NUMERO_AQUI"
+   class="whatsapp-float" target="_blank">
+   WhatsApp
+</a>
+
+</body>
+</html>
