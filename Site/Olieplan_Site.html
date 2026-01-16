@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OLIEPLAN | Consultoria Financeira & Estratégica</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                url("images/hero-bg.jpg") center/cover no-repeat;
+}
+
+.overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #d4af37;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.hero p {
+    max-width: 720px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.btn-gold {
+    background: #d4af37;
+    color: #000;
+    padding: 14px 36px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+/* SERVIÇOS */
+.services {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #d4af37;
+    margin-bottom: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background: #111;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    color: #d4af37;
+    margin: 18px 0 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-card p {
+    padding: 0 18px 25px;
+    font-size: 0.95rem;
+}
+
+/* CTA */
+.cta {
+    padding: 90px 20px;
+    text-align: center;
+    background: #0b0b0b;
+}
+
+.cta h2 {
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 34px;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/* CONTATO */
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #222;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <img src="images/logo.png" class="logo" alt="Olieplan Logo">
+        <h1>OLIEPLAN</h1>
+        <h2>Consultoria Financeira & Estratégica</h2>
+        <p>
+            Planejamento Financeiro, FP&A, Controladoria, Dados e Mentoria
+            para empresas que buscam crescimento com clareza e controle.
+        </p>
+        <a href="#servicos" class="btn-gold">Conheça os Serviços</a>
+    </div>
+</header>
+
+<section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <img src="images/planejamento.jpg">
+            <h3>Planejamento Financeiro</h3>
+            <p>Fluxo de caixa, orçamento e projeções.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/estrategico.jpg">
+            <h3>Planejamento Estratégico</h3>
+            <p>Direcionamento e execução orientada a resultados.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/fpa.jpg">
+            <h3>FP&A</h3>
+            <p>Análises financeiras e previsões.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/controladoria.jpg">
+            <h3>Controladoria</h3>
+            <p>Governança financeira e indicadores.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/dados.jpg">
+            <h3>Consultoria de Dados</h3>
+            <p>Dados transformados em estratégia.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/mentoria.jpg">
+            <h3>Mentoria Executiva</h3>
+            <p>Acompanhamento estratégico.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Eleve o nível da gestão financeira da sua empresa</h2>
+    <p>Descubra como a Olieplan pode apoiar seu crescimento.</p>
+    <a href="#contato" class="btn-outline">Fale Conosco</a>
+</section>
+
+<section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>Email: contato@olieplan.com</p>
+    <p>LinkedIn: linkedin.com/in/olieplan</p>
+</section>
+
+<footer>
+    <p>© 2026 Olieplan Consultoria. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
