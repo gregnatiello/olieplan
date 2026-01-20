@@ -83,6 +83,8 @@ body {
     border-radius: 40px;
 }
 
+
+
 /* ================= SERVIÇOS ================= */
 .services {
     padding: 90px 8%;
@@ -222,6 +224,45 @@ footer {
     text-decoration: none;
     z-index: 999;
 }
+
+
+/* ================= CONTATO ICONES ================= */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 25px;
+}
+
+.contact-icons a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-icons a svg {
+    width: 20px;
+    height: 20px;
+    fill: #d4af37;
+    transition: all 0.3s ease;
+}
+
+.contact-icons a:hover {
+    background: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.contact-icons a:hover svg {
+    fill: #000;
+}
+
+
+
 </style>
 </head>
 
@@ -230,7 +271,7 @@ footer {
 <!-- ================= HERO ================= -->
 <header class="hero">
     <div class="overlay">
-        <img src="ChatGPT Image 16 de jan. de 2026, 10_32_03.png" class="logo" alt="Olieplan Logo">
+        <img src="dda135e2-1b3f-4c8e-a15b-57e2f3f6a581.jfif" class="logo" alt="Olieplan Logo">
         <h1>Consultoria Financeira e Estratégica</h1>
         <h2></h2>
         <p>
@@ -312,6 +353,28 @@ footer {
     </p>
 </section>
 
+<!-- ================= RESPONSÁVEL TÉCNICO ================= -->
+<section class="about">
+    <h2>Responsável Técnico</h2>
+    <p>
+        Com mais de 10 anos de experiência no mercado, o responsável técnico da Olieplan
+        construiu sua trajetória atuando em projetos estratégicos para empresas de grande porte
+        como Stone, Linx, Totvs, Banco Bradesco, Omni, Caixa, Nubank, Nextel, entre outros bancos
+        e instituições financeiras.
+    </p>
+    <p>
+        Ao longo da carreira, trabalhou diretamente com organização e estruturação de dados,
+        criação de consultas, dashboards gerenciais, planejamento financeiro e estratégico,
+        especialmente em operações das áreas de cobrança e localização.
+    </p>
+    <p>
+        Também desenvolveu softwares próprios para otimizar o empilhamento de dados,
+        melhorar a organização das informações e apoiar o planejamento financeiro.
+        Possui ainda experiência em gestão de projetos, incluindo atuação em obras civis,
+        cálculo de honorários e controle financeiro de projetos.
+    </p>
+</section>
+
 <!-- ================= CTA FINAL ================= -->
 <section class="cta">
     <h2>Vamos estruturar o crescimento da sua empresa?</h2>
@@ -329,13 +392,46 @@ footer {
 <!-- ================= CONTATO ================= -->
 <section id="contato" class="contact">
     <h2>Contato</h2>
-    <p>Email: contato@olieplan.com <!-- EDITÁVEL --></p>
-    <p>LinkedIn: linkedin.com/in/olieplan <!-- EDITÁVEL --></p>
+
+    <div class="contact-icons">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5511970926326" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 32 32">
+                <path d="M16 0C7.164 0 0 6.992 0 15.613c0 2.748.742 5.422 2.148 7.785L0 32l8.93-2.33c2.293 1.219 4.875 1.856 7.57 1.856C24.836 31.526 32 24.535 32 15.913 32 6.992 24.836 0 16 0zm0 29.174c-2.43 0-4.812-.652-6.879-1.883l-.49-.29-5.3 1.383 1.41-5.148-.32-.523A13.42 13.42 0 0 1 2.87 15.61c0-7.373 6.08-13.366 13.13-13.366 7.05 0 13.13 5.993 13.13 13.366 0 7.374-6.08 13.564-13.13 13.564zm7.356-9.81c-.4-.195-2.356-1.147-2.722-1.278-.365-.13-.63-.195-.896.195-.266.39-1.03 1.278-1.262 1.54-.23.26-.464.293-.864.098-.4-.195-1.69-.62-3.22-1.975-1.19-1.03-1.995-2.303-2.23-2.693-.23-.39-.024-.6.17-.795.18-.18.4-.463.6-.693.2-.23.266-.39.4-.65.133-.26.066-.488-.034-.684-.1-.195-.896-2.148-1.23-2.94-.326-.78-.66-.674-.896-.687l-.765-.013c-.266 0-.697.098-1.064.488-.366.39-1.4 1.367-1.4 3.33 0 1.963 1.432 3.86 1.63 4.126.2.26 2.82 4.304 6.83 6.035.954.41 1.7.655 2.28.838.958.295 1.83.253 2.52.153.77-.114 2.356-.955 2.69-1.878.333-.923.333-1.717.233-1.878-.1-.163-.365-.26-.764-.456z"/>
+            </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/olieplan" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.12 1 2.49 1 4.98 2.12 4.98 3.5zM.2 8.98h4.58V24H.2zM8.98 8.98h4.4v2.05h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V24h-4.58v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.54V24H8.98z"/>
+            </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/olieplan" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.403a4.92 4.92 0 0 1 1.77 1.03 4.92 4.92 0 0 1 1.03 1.77c.164.46.347 1.26.403 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.43a4.92 4.92 0 0 1-1.03 1.77 4.92 4.92 0 0 1-1.77 1.03c-.46.164-1.26.347-2.43.403-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.403a4.92 4.92 0 0 1-1.77-1.03 4.92 4.92 0 0 1-1.03-1.77c-.164-.46-.347-1.26-.403-2.43C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.43a4.92 4.92 0 0 1 1.03-1.77 4.92 4.92 0 0 1 1.77-1.03c.46-.164 1.26-.347 2.43-.403C8.416 2.212 8.8 2.2 12 2.2zm0 3.1a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zm0 11.1a4.4 4.4 0 1 1 0-8.8 4.4 4.4 0 0 1 0 8.8zm5.5-11.8a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z"/>
+            </svg>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:contato@olieplan.com" aria-label="Email">
+            <svg viewBox="0 0 24 24">
+                <path d="M2 4h20v16H2V4zm10 7L4 6v12h16V6l-8 5z"/>
+            </svg>
+        </a>
+
+    </div>
 </section>
+
 
 <footer>
     <p>© 2026 Olieplan Consultoria. Todos os direitos reservados.</p>
 </footer>
+
+
 
 <!-- ================= BOTÃO WHATSAPP FIXO ================= -->
 <a href="https://wa.me/5511970926326"
