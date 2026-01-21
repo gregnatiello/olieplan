@@ -261,6 +261,45 @@ footer {
     fill: #000;
 }
 
+/* ================= RESPONSÁVEL TÉCNICO ================= */
+.tech-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tech-text {
+    flex: 1;
+}
+
+.tech-photo {
+    flex-shrink: 0;
+}
+
+.tech-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-photo a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.6);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .tech-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 
 </style>
@@ -354,26 +393,38 @@ footer {
 </section>
 
 <!-- ================= RESPONSÁVEL TÉCNICO ================= -->
-<section class="about">
-    <h2>Responsável Técnico</h2>
-    <p>
-        Com mais de 10 anos de experiência no mercado, o responsável técnico da Olieplan
-        construiu sua trajetória atuando em projetos estratégicos para empresas de grande porte
-        como Stone, Linx, Totvs, Banco Bradesco, Omni, Caixa, Nubank, Nextel, entre outros bancos
-        e instituições financeiras.
-    </p>
-    <p>
-        Ao longo da carreira, trabalhou diretamente com organização e estruturação de dados,
-        criação de consultas, dashboards gerenciais, planejamento financeiro e estratégico,
-        especialmente em operações das áreas de cobrança e localização.
-    </p>
-    <p>
-        Também desenvolveu softwares próprios para otimizar o empilhamento de dados,
-        melhorar a organização das informações e apoiar o planejamento financeiro.
-        Possui ainda experiência em gestão de projetos, incluindo atuação em obras civis,
-        cálculo de honorários e controle financeiro de projetos.
-    </p>
+<section class="about tech">
+    <div class="tech-container">
+
+        <div class="tech-text">
+            <h2>Responsável Técnico</h2>
+            <p>
+                Com mais de 10 anos de experiência no mercado, o responsável técnico da Olieplan
+                construiu sua trajetória atuando em projetos estratégicos para empresas de grande porte
+                como Stone, Linx, Totvs, Banco Bradesco, Omni, Caixa, Nubank, Nextel, entre outros bancos
+                e instituições financeiras.
+            </p>
+            <p>
+                Ao longo da carreira, trabalhou diretamente com organização e estruturação de dados,
+                criação de consultas, dashboards gerenciais, planejamento financeiro e estratégico,
+                especialmente em operações das áreas de cobrança e localização.
+            </p>
+            <p>
+                Também desenvolveu softwares próprios para otimizar o empilhamento de dados,
+                melhorar a organização das informações e apoiar o planejamento financeiro.
+                Possui ainda experiência em gestão de projetos.
+            </p>
+        </div>
+
+        <div class="tech-photo">
+            <a href="https://www.linkedin.com/in/gregory-natiello-673848a0/" target="_blank" aria-label="LinkedIn Responsável Técnico">
+                <img src="foto.PNG" alt="Responsável Técnico Olieplan">
+            </a>
+        </div>
+
+    </div>
 </section>
+
 
 <!-- ================= CTA FINAL ================= -->
 <section class="cta">
@@ -403,7 +454,7 @@ footer {
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/olieplan" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/company/olieplan/about/" target="_blank" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24">
                 <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.12 1 2.49 1 4.98 2.12 4.98 3.5zM.2 8.98h4.58V24H.2zM8.98 8.98h4.4v2.05h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V24h-4.58v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.54V24H8.98z"/>
             </svg>
